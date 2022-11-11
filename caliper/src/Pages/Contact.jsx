@@ -1,7 +1,41 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Contact.module.css";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { addEmployee, getEmployee } from "../Redux/ContactReducer/action";
+import { ADD_EMPLOYEE_SUCCESS } from "../Redux/ContactReducer/actionTypes";
+
 const Contact = () => {
-  return (
+  
+    const [formData, setFormData] = useState({});
+  
+    const navigate = useNavigate();
+  
+    const dispatch = useDispatch();
+
+    const employeeData = useSelector((state) => state.user.employee);
+
+
+    const handleData = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+      };
+
+      const handleSubmit = (e) => {
+        e.preventDefault();
+        dispatch(addEmployee(formData)).then((res) => {
+          if (res.type == ADD_EMPLOYEE_SUCCESS) {
+            alert("Data is Added Successfully !");
+            dispatch(getEmployee());
+          }
+        });
+      };
+
+      useEffect(() => {
+        dispatch(getEmployee());
+      }, []);
+
+return (
     <div className={styles.Contact_Main}>
       <div className={styles.Contact_Banner}>
         <h1>Contact Us to SetUp Your of Hydroponic Farm in India </h1>
@@ -18,19 +52,19 @@ const Contact = () => {
             </h3></div>
             
             <div className={styles.Contact_Sub_Main_Forms_Box}>
-            <form>
+            <form onSubmit={handleSubmit}>
             <div className={styles.Contact_Sub_Main_Forms_Input}>
-            <input type="text" placeholder="Name"></input></div>
+            <input type="text" placeholder="Name" name="name" onChange={handleData}></input></div>
             <div className={styles.Contact_Sub_Main_Forms_Input}>
-            <input type="text" placeholder="Place"></input></div>
+            <input type="text" placeholder="Place" onChange={handleData} name="place"></input></div>
             <div className={styles.Contact_Sub_Main_Forms_Input}>
-            <input type="text" placeholder="Email"></input></div>
+            <input type="text" placeholder="Email" onChange={handleData} name="email"></input></div>
             <div className={styles.Contact_Sub_Main_Forms_Input}>
-            <input type="text" placeholder="Phone"></input></div>
+            <input type="text" placeholder="Phone" onChange={handleData} name="phone"></input></div>
             <div className={styles.Contact_Sub_Main_Forms_Input}> 
-            <input type="text" placeholder="Description"></input></div>
+            <input type="text" placeholder="Description" onChange={handleData} name="description"></input></div>
             <div className={styles.Contact_Sub_Main_Forms_Input}>
-            <input type="text" placeholder="Size of land"></input></div>
+            <input type="text" placeholder="Size of land" onChange={handleData} name="sizeofland"></input></div>
             <div className={styles.Contact_Sub_Main_Forms_Input_submit}><input type="submit"></input></div>
             </form>
             </div>
