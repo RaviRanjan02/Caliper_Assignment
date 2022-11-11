@@ -1,0 +1,70 @@
+.Contact_Main {
+  width: 100%;
+  margin: 50px auto;
+  padding: 0px;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+.Contact_Banner {
+  width: 100%;
+  background-color: rgb(10, 197, 35);
+  color: white;
+  font-family: sans-serif;
+  font-size: 40px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.Contact_Sub_Main {
+  width: 90%;
+  margin: 50px auto;
+  /* border: 1px solid red; */
+  justify-content: space-between;
+  display: flex;
+  min-height: 900px;
+}
+.Contact_Sub_Main_Image {
+  /* border: 1px solid red; */
+  width: 50%;
+}
+.Contact_Sub_Main_Forms {
+  width: 50%;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Contact_Sub_Main_Forms_Box {
+  width: 90%;
+  margin: 40px auto;
+  cursor: pointer;
+  border: 1px solid rgb(10, 197, 35);
+  min-height: 700px;
+}
+
+.Contact_Sub_Main_Forms_Input{
+  width: 95%;
+  margin: 20px auto;
+  /* border: 1px solid red; */
+}
+.Contact_Sub_Main_Forms_Input > input {
+  width: 90%;
+  height: 30px;
+  cursor: pointer;
+  /* border: 1px solid red; */
+}
+.Contact_Sub_Main_Forms_Input_submit {
+  width: 70%;
+  height: 40px;
+  margin: 20px auto;
+  /* border: 1px solid red; */
+}
+.Contact_Sub_Main_Forms_Input_submit > input {
+  width: 90%;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(10, 197, 35);
+}

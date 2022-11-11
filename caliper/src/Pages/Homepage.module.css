@@ -1,0 +1,68 @@
+.Homepage_Main{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.Homepage_Video_text{
+    position:absolute;
+    top:50%;
+    left:8%;
+    z-index:1;  
+}
+.Homepage_Video_text>p{
+  color: white;
+  font-size: 4rem;
+  align-self: center;
+  font-family: sans-serif;
+}
+.Homepage_Sub_Main{
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: 0 auto;
+}
+/* .Homepage_definition{
+    border: 1px solid red;
+} */
+.Homepage_diiferent_services_top{
+    /* border: 1px solid black; */
+    display: flex;
+    margin-top: 50px;
+    padding: 10px;
+    justify-content: space-between;
+}
+.Homepage_diiferent_services_top>div{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+.Homepage_diiferent_services_bottom{
+    /* border: 1px solid black; */
+    margin-top: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.Homepage_diiferent_services_bottom>div{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.Homepage_Info_Images{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+}
+.Homepage_Info_Images>div{
+margin-top: 10px;
+}
+.Homepage_Info_Images>div>img{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

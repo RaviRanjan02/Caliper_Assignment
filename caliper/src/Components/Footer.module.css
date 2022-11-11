@@ -1,0 +1,31 @@
+.Footer_Main{
+    width: 100%;
+    /* border: 1px solid  rgb(10, 197, 35); */
+    min-height: 70px;
+    margin: 0 auto;
+    padding: 0px;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.Footer_Sub_Main{
+    width: 90%;
+    /* border: 1px solid rgb(10, 197, 35); */
+    margin: 0 auto;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Footer_Logo{
+    width: 90%;
+    /* border: 1px solid green; */
+    min-height: 50px;
+    margin: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(10, 197, 35);
+    cursor: pointer;
+    font-size: 20px;
+    font-family: sans-serif;
+}

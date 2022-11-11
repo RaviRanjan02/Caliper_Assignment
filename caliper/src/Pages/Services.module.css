@@ -1,0 +1,44 @@
+.Services_Main{
+    width: 100%;
+    margin: 50px auto;
+    padding: 0px;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+.Services_Banner{
+    width: 100%;
+    background-color: rgb(10, 197, 35);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 40px;
+    padding: 10px;
+}
+.Services_Sub_Main{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    /* border: 1px solid blue; */
+}
+.Services_Technology_commercial_farming{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    align-items: center;
+}
+.Services_Technology_commercial_farming_Title{
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 600;
+    width: 50%;
+}
+.Services_Technology_commercial_farming_Image{
+    width: 50%;
+    
+}
+.Services_Technology_commercial_farming_Image>img{
+width: 500px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

@@ -1,0 +1,47 @@
+.Navbar_Main{
+    width: 100%;
+    /* border: 1px solid  rgb(10, 197, 35); */
+    min-height: 70px;
+    margin: 0 auto;
+    padding: 0px;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: sticky;
+    top: 0;
+    z-index: 100000;
+    background-color: white;
+}
+
+.Navbar_Sub_Main{
+    width: 90%;
+    /* border: 1px solid rgb(10, 197, 35); */
+    margin: 0 auto;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Navbar_Logo{
+    width: 50%;
+    /* border: 1px solid green; */
+    min-height: 50px;
+    margin: 6px;
+    display: flex;  
+    align-items: center;
+    color: rgb(10, 197, 35);
+    cursor: pointer;
+    font-size: 40px;
+    
+}
+.Navbar_Tabs{
+    width: 50%;
+    /* border: 1px solid green; */
+    min-height: 50px;
+    margin: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(10, 197, 35);
+    cursor: pointer;
+    font-size: 25px;
+    font-family: sans-serif;
+}
